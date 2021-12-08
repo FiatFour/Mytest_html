@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping•♥☺</title>
+
+    <!-- ตั้งเส้นขอบเพื่อแสดงขอบเขตของ Tag span ||w/|| div บรรทัดที่ 74  -->
+    <style>
+        span{
+            border: 1px solid red;
+        }
+        div{
+            border: 1px solid green;
+        }
+    </style>
+
+</head>
+<body>
+    <h1></h1>
+    <a href="../Firsttest.html"> <img src="https://bit.ly/3lsJadG" alt="รูปบ้าน" width="100px" height="100px"></a>
+    <hr>
+    <h1>รายการสินค้า</h1>
+
+    <table border="1" bgcolor="B0F4F9" cellpadding="10" cellspacing="5">
+        <!-- border="ขนาดเส้นตาราง" || bgcolor="สีที่ต้องการรระบาย" || cellpadding="ขยายกล่องด้านในเส้นตาราง(pixel) | cellspacing="ขยายขนาดเส้นตาราง(pixel)" -->
+        <thead>
+            <th>รหัสสินค้า (Column 1)</th>
+            <th>ภาพสินค้า (Column 2)</th>
+            <th >ชื่อสินค้า (Column 3)</th>
+            <th>ราคา (Column 4)</th>
+            <th>ดำเนินการ (Column 5)</th>
+        </thead>
+        <tbody align="center">
+            <!-- alingn="คล้าย anchor ใน Python สามรถจัดตาแหน่งภาพและตัวอักษร" -->
+
+            <!-- row 1 -->
+            <tr>
+                <!-- cloumn -->
+                <td>P001 (Column 1)</td>
+                <td><img src="https://bit.ly/3EphjTk" alt="ภาพสินค้า รูปฟิกเกอร์นารูโตะ" width="100px" height="150px"></td>
+                <td >ฟิกเกอร์นารูโตะ</td>
+                <td bgcolor="red">500 <del>bath</del></td>
+                <td width="0.5%" rowspan="2"><a href="#">ซื้อสินค้า (Column 5)</a></td>
+            </tr>
+                <!-- row 2 -->
+            <tr bgcolor="80C4FF">
+                <!-- cloumn -->
+                <td>P002 (Column 1)</td>
+                <td><img src="https://bit.ly/3pmiFrG" alt="ภาพสินค้า รูปฟิกเกอร์นอิทาจิ" width="100px" height="100px"></td>
+                <td>ฟิกเกอร์อิทาจิ</td>
+                <td >1000</td>
+                <td><a href="#">ซื้อสินค้า (Column 5)</a></td>
+                <td>llllll</td>
+            </tr>
+        </tbody>
+            <!-- colspan="กินพื้นที่แนวตั้งแต่จะแสดงในรูปแบบของแนวนอน" |!!!ใช้ได้ในเฉพาะ Tag <td>!!!| rowspan="กินพื้นที่ในแนวนอนแต่จะแสดงในรูปแบบของแนวตั้ง" -->
+        <tfoot align="center">
+            <tr>
+                <td bgcolor="Pink" colspan="3"> 2 สินค้า </td>
+                <td align="Left"><b>ราคารวม: 1500</b></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <!-- 
+        <span style="color: blueviolet;"">
+        <h1>กลุ่มแรกw</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sint!</p>
+    </span> 
+-->
+
+    <span style="color: blueviolet;"">
+        <span>จัดกลุ่มแรก ไม่เว้นบรรทัดให้ (in line กินพื้นที่ตามขนาด)</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sint!</span>
+    </span>
+
+    <div style="color: chocolate;">
+        <div>จัดกลุ่มสอง ทำหน้าที่เหมือน Tag (block กินพื้นที่เต็ม)<b> < P > </b></div>
+        Fiat
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae.</div>
+    </div>
+</body>
+</html>
