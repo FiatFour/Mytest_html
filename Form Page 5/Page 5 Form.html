@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน Page 5</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+        form{
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <form align="center">
+        <Label></Label>
+        <!-- label แสดงตัวอักษร || input สร้าง text box คล้ายใน python-->
+        <!-- for="คำอิธบาย" type="ชนิดช่อง" name"ชื่อตัวแปรในการรับค่า" // required ต้องใส่ข้อมูลหากมี attribute นี่อยู่ -->
+        <div>
+            <label for="First name">ชื่อจริง</label>
+            <input type="text" name="fname" placeholder="ใส่คำอธิบายด้านใน text box" required>
+        </div>
+
+        <div>
+            <label for="Last name">นามสกุล</label>
+            <input type="text" name="lname">
+        </div>
+        
+        <div>
+            <label for="Email">อีเมล</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="Password">รหัสผ่าน</label>
+            <input type="password" name="password">
+        </div>
+
+        <div>
+            <label for="">ที่อยู่</label>
+            <!--Textarea สร้าง text box ที่กำหนดขนาดเองได้  -->
+            <textarea name="" cols="30" rows="10" readonly>
+                readonly เป็น Attribute ที่ทำให้อ่านได้อย่างเดียว
+            </textarea>
+        </div>
+        
+         <div>
+            <label for="Age">อายุ</label>
+            <!-- mim="ตั้งค่าน้อยสุดเท่าได้เท่า" max="ค่ามากสุดท่าไหร่" value="ค่าเรึ่มต้นหรือชื่อในช่อง" -->
+            <input type="number" name="age" min="-1" max="100" value="21">
+        </div>
+
+        <div>
+            <label for="Birth">วันเกิด</label>
+            <input type="date" name="birthdate">
+        </div>
+    
+        <div>
+            <label for="Phone number">เบอร์โทรศัพท์</label>
+            <input type="tel" name="tel">
+        </div>
+
+        <div>
+            <label for="Fav color">สีที่ชอบ</label>
+            <input type="color" name="fav_color">
+        </div>
+        
+        <div> <!-- ปุ่มลาก -->
+            <label for="Range number">ช่วงตัวเลข</label>
+            <input type="range" name="range_number" value="0">
+        </div>
+
+      
+        <div> <!-- radio กับหนด attribute เป็นชื่อเดียวกัน จึงสามารถเลือกได้แค่ 1 ช่อง -->
+            <label for="Sex">เพศ</label>
+            <input type="radio" name="gender" >เพศชาย
+            <input type="radio" name="gender" >เพศหญิง
+            <input type="radio" name="gender" >ไม่ระบุ
+        </div>
+
+        
+        <div> <!-- checkbox เลือกได้หลายช่อง -->
+            <label for="Fav thing">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="fav_thing">เล่นเกม
+            <input type="checkbox" name="fav_thing">สร้างเกม
+            <input type="checkbox" name="fav_thing">เขียนโปรแกรม
+            <input type="checkbox" name="fav_thing">ดูหนัง
+        </div>
+        
+        
+        <div> <!-- เหมาะสำหรับตัวเลือกเยอะๆ -->
+            <label for="Degree">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="Choose file">แนบเอกสาร</label>
+            <input type="file">
+        </div>
+
+        <div>
+            <label for="Website">เว็บไซต์</label>
+            <input type="url">
+        </div>
+
+        <div>
+            <!-- 
+            ทำงานเหมือน button สอง block นี้ทำงานเหมือนกัน 
+            <input type="submit" value="บันทึกข้อมูล">
+            <input type="reset" value="ล้างข้อมูล">
+            -->
+            <button type="submit">บันทึกข้อมูล</button>
+            <button type="reset">ล้างข้อมูล</button>
+            <!--  reset จะล้างค่าในช่องทั้งหมดที่อยู้ภายใต้ Tag < from > || button ก็เช่นเดียวกัน -->
+        </div>
+    </form>
+</body>
+</html>
