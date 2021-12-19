@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and ID</title>
+
+    <style>
+        h1{
+            color: blue;
+        }
+        
+        /* .ตามด้วยชื่อที่ตั้งของ Class เพื่ออ้างอิง */
+        .b{
+            color: green;
+        }
+
+        /* #ตามด้วยชื่อที่ตั้งของ Id เพื่ออ้างอิง */
+        #a,#b,#c{
+            color: red;
+        }
+
+        .f{
+            background-color: pink;
+            /* background-color: สีที่ต้องการให้ Hightlight ข้อความทำงานเหมือนกับ Tag <mark>; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Class กับ Id เป็น attribute เพื่อไว้ใช้อ้างอิงในแท็กนั้นๆแต่การตั้งชื่อต้องระบุเป็นภาษาอังกฤษเท่านั้น Class="ตั้งชื่อซ้ำได้" || Id="ห้ามตั้งชื่อซ้ำ" ทั้งสอง attribute นี้ตั้งชื่อแบบเดียวกันได้-->
+    <h1 class="a">Fiat</h1>
+    <h1 class="b">Fiat</h1>
+    <h1 class="a">Fiat</h1>
+    <h1 class="b" id="a">Fiat</h1>
+    <h1 id="b">Fiat</h1>
+    <h1 class="f" id="c">Fiat</h1>
+
+    <div class="b">
+        html css javascript
+    </div>
+    <span class="f">
+        HTML programming
+    </span>
+</body>
+</html>
